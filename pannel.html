@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>JavaScript Program to calcualte Addition and Subtraction of two numbers</title>
+</head>
+<body>
+<table>
+<tr>
+<td> Load in watt hour <input type="number" name="a" id="first" placeholder="Enter in Wh"> </td>
+</tr>
+<tr>
+<td> Sun peak hour <input type="number" name="b" id="second" placeholder="Enter in hour"> </td>
+</tr>
+<tr>
+<td> <button onclick="add ( )">Submit</button> </td>
+</tr>
+</table>
+<div id="add"></div>
+<div id="sub"></div>
+</body>
+
+<script type="text/javascript">
+function add( )
+{
+var a,b,Add,Sub;
+a = parseInt(document.getElementById ("first").value);
+b = parseInt(document.getElementById ("second").value);
+Add = a/(b*0.8); //Add two numbers
+Sub = Add/1000; //Subtraction of two numbers
+//To print the result
+document.getElementById ("add") .innerHTML ="Panel wattage capacity in watt : "+Add;
+document.getElementById ("sub").innerHTML ="Panel wattage capacity in kilowatt(KW) : "+Sub;
+}
+</script>
+</html>
