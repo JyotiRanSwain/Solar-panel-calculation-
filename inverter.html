@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>JavaScript Program to calcualte Addition and Subtraction of two numbers</title>
+</head>
+<body>
+<table>
+<tr>
+<td> Load in watt <input type="number" name="a" id="first" placeholder="Enter in watt"> </td>
+</tr>
+
+<tr>
+<td> <button onclick="add ( )">Submit</button> </td>
+</tr>
+</table>
+<div id="add"></div>
+<div id="kw"></div>
+</body>
+
+<script type="text/javascript">
+function add( )
+{
+var a,Add,kw;
+a = parseInt(document.getElementById ("first").value);
+Add = a/(0.8*0.8); //Add two numbers
+kw = Add/1000
+//To print the result
+document.getElementById ("add") .innerHTML ="Inverter capacity in VA  : "+Add;
+document.getElementById ("kw").innerHTML ="Inverter capacity in kilovolt-ampere(KVA)  : "+kw;
+}
+</script>
+</html>
